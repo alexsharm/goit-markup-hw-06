@@ -39,11 +39,11 @@ a {
 }
 
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .section {
@@ -58,10 +58,7 @@ a {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-  position: fixed;
-  z-index: 99;
   background-color: #ffffff;
-  width: 100%;
 }
 
 .header-container {
@@ -148,15 +145,49 @@ header .studio-logo {
   color: #2e2f42;
 }
 
-.header-logo {
-  margin-right: 76px;
-}
-
 /* Navigation */
 
 .nav-contacts:hover,
 .nav-portfolio:hover {
   color: #404bbf;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+}
+
+/* Mobile menu */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  width: 320px;
+}
+
+.close-menu-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* First section */
@@ -834,4 +865,18 @@ button {
 .custom-checkbox-icon {
   width: 10px;
   height: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 16px;
+  }
 }

@@ -22,30 +22,42 @@
   <body>
     <header class="page-header">
       <div class="container header-container">
-        <nav class="nav-container">
-          <a href="./index.html" class="logo header-logo header-link"
-            >Web<span class="studio-logo">Studio</span></a
-          >
-          <ul class="header-list">
-            <li>
-              <a href="./index.html" class="header-link nav-studio">Studio</a>
-            </li>
-            <li><a href="" class="header-link nav-portfolio">Portfolio</a></li>
-            <li><a href="" class="header-link nav-contacts">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="contacts-header">
-          <ul class="contacts-list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="email"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+110001111111" class="email">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
+        <a href="./index.html" class="logo header-logo header-link"
+          >Web<span class="studio-logo">Studio</span></a
+        >
+        <div class="visually-hidden">
+          <nav class="nav-container">
+            <ul class="header-list">
+              <li>
+                <a href="./index.html" class="header-link nav-studio">Studio</a>
+              </li>
+              <li>
+                <a href="" class="header-link nav-portfolio">Portfolio</a>
+              </li>
+              <li><a href="" class="header-link nav-contacts">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="contacts-header">
+            <ul class="contacts-list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="email"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="email"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <button type="menu" class="menu-button">
+          <svg width="24" height="24" class="header-menu-icon">
+            <use href="./images/icons.svg#icon-solid_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -545,6 +557,18 @@
           <button type="submit" class="send-button">Send</button>
         </form>
       </div>
+    </div>
+    <div class="mobile-menu is-open">
+      <button type="button" class="close-menu-button">
+        <svg width="8" height="8" class="close-icon">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <ul>
+        <li><a href="#">Studio</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
     </div>
   </body>
 </html>
