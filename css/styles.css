@@ -21,6 +21,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 ul {
@@ -1256,5 +1257,11 @@ button {
   .subscribe-button:hover,
   .subscribe-button:focus {
     background-color: #404bbf;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .first-section {
+    background-image: url(../images/hero-background-image@2x.jpg);
   }
 }
