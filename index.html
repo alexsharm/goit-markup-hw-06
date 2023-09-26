@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js"></script>
     <title>WebStudio</title>
   </head>
   <body>
@@ -48,7 +49,7 @@
           </ul>
         </address>
 
-        <button type="menu" class="menu-button">
+        <button onclick="openMenuFunction()" type="menu" class="menu-button">
           <svg width="24" height="24" class="header-menu-icon">
             <use href="./images/icons.svg#icon-solid_menu"></use>
           </svg>
@@ -60,7 +61,7 @@
       <section class="first-section">
         <div class="container first-sect-cont">
           <h1 class="main-heading">Effective Solutions for Your Business</h1>
-          <button type="button" class="head-button">Order Service</button>
+          <button onclick="openButFunction()" id="orderButton" type="button" class="head-button">Order Service</button>
         </div>
       </section>
 
@@ -475,9 +476,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div id="myBackdrop" class="backdrop is-hidden">
       <div class="modal-window">
-        <button type="button" class="close-button">
+        <button onclick="closeButFunction()" id="closeButton" type="button" class="close-button">
           <svg width="8" height="8" class="close-icon">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -561,8 +562,8 @@
         </form>
       </div>
     </div>
-    <div class="mobile-menu">
-      <button type="button" class="close-menu-button">
+    <div id="mobile_menu-id" class="mobile-menu">
+      <button onclick="closeMenuFunction()" type="button" class="close-menu-button">
         <svg width="8" height="8" class="close-icon">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
